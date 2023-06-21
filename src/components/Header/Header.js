@@ -2,8 +2,13 @@ import React from 'react';
 import './Header.css';
 import { TextField, ThemeProvider, createTheme, MenuItem } from '@mui/material';
 import categories from '../../data/category';
+import { Button } from '@mui/material';
+import { useRef } from 'react';
 
-const Header = ({ category, setCategory, word, setWord }) => {
+const Header = ({ category, setCategory, word, setWord, dictionaryApi }) => {
+  const searchRef = useRef(null);
+  const languageRef = useRef(null);
+
   const darkTheme = createTheme({
     palette: {
       primary: {
@@ -16,6 +21,10 @@ const Header = ({ category, setCategory, word, setWord }) => {
   const handleChange = (language) => {
     setCategory(language);
     setWord('');
+  };
+
+  const handleSearchClick = () => {
+    dictionaryApi();
   };
 
   return (
@@ -32,21 +41,25 @@ const Header = ({ category, setCategory, word, setWord }) => {
             onChange={(e) => {
               setWord(e.target.value);
             }}
+            ref={searchRef}
           />
           <TextField
             select
-            labelId="demo-simple-select-label"
             id="demo-simple-select"
             label="Language"
             value={category}
             onChange={(e) => handleChange(e.target.value)}
-            className="select">
+            className="select"
+            ref={languageRef}>
             {categories.map((option) => (
               <MenuItem value={option.label} key={option.label}>
                 {option.value}
               </MenuItem>
             ))}
           </TextField>
+          <Button variant="outlined" onClick={handleSearchClick}>
+            Search
+          </Button>
         </ThemeProvider>
       </div>
     </div>
