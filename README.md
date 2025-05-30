@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 📚 Vocablo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Vocablo** is a modern web application designed to enhance vocabulary learning through interactive and engaging methods. Built with a robust tech stack, it offers a responsive and efficient platform for learners to expand their vocabulary seamlessly.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Tech Stack
 
-### `npm start`
+- **Frontend**: React
+- **Build Tool**: Create React App
+- **Package Manager**: npm
+- **Testing**: Jest
+- **Linting & Formatting**:
+  - ESLint
+  - Prettier
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Project Structure
 
-### `npm test`
+```
+vocablo/
+├── public/                 # Static assets
+├── src/                    # Source code
+│   ├── components/         # Reusable UI components
+│   ├── pages/              # Application pages
+│   ├── styles/             # Styling files
+│   └── index.js            # Application entry point
+├── .gitignore              # Git ignore file
+├── README.md               # Project documentation
+├── package.json            # Project metadata and scripts
+└── package-lock.json       # Dependency lock file
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ensure you have the following installed:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/) (v14 or later)
+- [npm](https://www.npmjs.com/) (v6 or later)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the repository**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/wporta/vocablo.git
+   cd vocablo
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Start the development server**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm start
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   The application will be accessible at `http://localhost:3000`.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🧪 Scripts
 
-### Analyzing the Bundle Size
+- `npm start`: Start the development server with hot module replacement.
+- `npm test`: Launch the test runner in interactive watch mode.
+- `npm run build`: Build the application for production.
+- `npm run eject`: Eject the app for full control over configurations.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 📄 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+This project is licensed under the [MIT License](LICENSE).
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👤 Author
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Developed by [Wilfredo Porta](https://wporta.org/), a passionate Software Engineer based in Managua, Nicaragua, dedicated to creating software that simplifies and enriches lives.
